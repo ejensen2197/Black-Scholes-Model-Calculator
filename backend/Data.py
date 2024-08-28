@@ -78,14 +78,17 @@ def fetch_option_data(ticker, strike_price, expiration_date, option_type):
     
 
     
-    option_info = {
+    option_bid_ask = {
         "bid": option_data.iloc[0]['bid'],
         "ask": option_data.iloc[0]['ask'],
         "bid_size": option_data.iloc[0]['bidSize'],
         "ask_size": option_data.iloc[0]['askSize']
     }
+    #creates a dictionary called option_info containing the Bid/Ask data of the specified option 
+    #It is assumed that ther eis only one row in option_data because the strike price is unique. .iloc[0] directly accesses this row 
     
-    return None, option_info
+    return None, option_bid_ask
+    
 
     
     
