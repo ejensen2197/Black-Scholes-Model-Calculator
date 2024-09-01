@@ -1,7 +1,6 @@
-
 import Home from './pages/home';
-import './App.css';
-
+// import './App.css';
+import './index.css'
 
 function App() {
   
