@@ -1,14 +1,15 @@
 import React from 'react';
+import Inputs from '../components/inputs';
+import BlackScholes from '../components/black-scholes';
+import '../index.css';
 const Home: React.FC = () => {
 
     return (
-        <div>
-            <div>
-                <h1>Black-Scholes Model Calculator</h1>
-            </div>
-            <input value='100.00' /> 
-            <button>+</button>
-            <button>-</button>
+        <div className='bg-slate-900 flex flex-row'>
+            <Inputs />
+            <BlackScholes />
+            
+            
         </div>
     )
 }
