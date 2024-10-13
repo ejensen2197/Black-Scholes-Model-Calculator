@@ -1,9 +1,7 @@
 # -----------------------------------------------
 
 #V1 comparative options valuation model ...
-#all comments are added under relevant lines
 #all financial data is fetched from yahoo finance
-#possible Alpha Vantage API usage for partial usage
 #VS and ChatGPT used for debugging
                      
 #-----------------------------------------------
@@ -38,7 +36,7 @@ def BlackScholes(S, K, T, r, sigma, OptionType="call"):
         return (K * math.exp(-r * T) * norm.cdf(-d2)) - (S * norm.cdf(-d1))
 
 
-# US market holidays for 2024 (update as needed for future years)
+# US market holidays for 2024 (update as needed for future years) ---------------------------------
 
 US_MARKET_HOLIDAYS = {
     (1, 1),   # New Year's Day
@@ -166,4 +164,6 @@ if option_data['bid'] and option_data['ask']:
 else:
     print(f"Last traded price: {option_data['fair_value']}")
 print(f"Market Status: {option_data['market_status']}")
+
+def compare_options_valuation(fair_value, )
 
